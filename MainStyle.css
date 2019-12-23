@@ -773,8 +773,12 @@ time, mark, audio, video{
         position: relative;
         width: 100%;
         height: 0;
-        padding-bottom: 56%;
         cursor: pointer;
+    }
+
+    .video + h1
+    {
+        margin-top: 56%;
     }
 
     .video_media
@@ -790,8 +794,8 @@ time, mark, audio, video{
     .video_button
     {
         position: absolute;
-        top: 50%;
-        left: 45%;
+        margin-top: 25%;
+        margin-left: 50%;
         transform: translate(-50%,-50%);
         background-color: transparent;
         border: none;
@@ -1964,8 +1968,12 @@ time, mark, audio, video{
         position: relative;
         width: 100%;
         height: 0;
-        padding-bottom: 100%;
         cursor: pointer;
+    }
+
+    .video + h1
+    {
+        margin-top: 80%;
     }
 
     .video_media
@@ -1981,8 +1989,8 @@ time, mark, audio, video{
     .video_button
     {
         position: absolute;
-        top: 35%;
-        left: 45%;
+        margin-top: 30%;
+        margin-left: 40%;
         transform: translate(-50%,-50%);
         background-color: transparent;
         border: none;
