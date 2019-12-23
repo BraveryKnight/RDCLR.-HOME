@@ -50,7 +50,7 @@ document.addEventListener('DOMContentLoaded', function () {
         function resize() {
             width = window.innerWidth;
             if (block)
-                block.style.width = `98.9vw`;
+                block.style.width = `100%`;
         }
 
         resize();
