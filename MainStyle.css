@@ -360,7 +360,6 @@ time, mark, audio, video{
         height: 400px;
         z-index: 4;
         background: #FFFFFF;
-        border: 1px solid black;
     }
 
     .message-text b{
@@ -1362,6 +1361,17 @@ time, mark, audio, video{
         outline: none;
     }
 
+    input[type="checkbox"].error + label::before {
+        content: ' ';
+        top: 40px;
+        width: 27px;
+        height: 27px;
+        display: block;
+        background: white;
+        outline: none;
+        border: 2px solid #EC3332;
+    }
+
     input[type="checkbox"] + label::after {
         content: ' ';
         position: absolute;
@@ -1422,6 +1432,64 @@ time, mark, audio, video{
         color: #FFFFFF;
         box-shadow: 5px 5px #000000;
         border: none;
+    }
+
+    .overlay
+    {
+        display: none;
+        background: black;
+        top: 0;
+        left: 0;
+        background: rgba(0, 0, 0, 0.7);
+        z-index: 3;
+        position: fixed;
+        width: 100%;
+        height: 100%;
+    }
+
+    .message-text{
+        position: fixed;
+        left: 20%;
+        top: 20%;
+        width: 60%;
+        height: 200px;
+        z-index: 4;
+        background: #FFFFFF;
+    }
+
+    .message-text b{
+        font-family: 'Montserrat', sans-serif;
+        font-style: normal;
+        font-size: 20px;
+        line-height: 120%;
+        text-align: center;
+        letter-spacing: 0.02em;
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        margin-right: -50%;
+        transform: translate(-50%, -50%)
+    }
+
+    .message-text p{
+        font-family: 'Montserrat', sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 130%;
+        text-align: center;
+        margin-top: 100px;
+    }
+
+    .message-text button{
+        float: right;
+        width: 25px;
+        cursor: pointer;
+        height: 25px;
+        border: none;
+        outline: none;
+        margin: 20px 20px;
+        background: url("img/close.svg") no-repeat center center;
     }
 
     .row
