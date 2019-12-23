@@ -361,7 +361,15 @@ document.addEventListener('DOMContentLoaded', function () {
         iframe.setAttribute('allow', 'autoplay');
         iframe.setAttribute('src', generateURL(id));
         iframe.setAttribute('width', '100%');
-        iframe.setAttribute('height', '350px');
+        if (window.innerWidth > '800')
+        {
+            iframe.setAttribute('height', '350px');
+        }
+        else
+        {
+            iframe.setAttribute('height', '190px');
+        }
+
         iframe.classList.add('video__media');
 
         return iframe;

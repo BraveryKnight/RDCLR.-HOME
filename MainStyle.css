@@ -1872,20 +1872,68 @@ time, mark, audio, video{
         width: 14px;
     }
 
-    .vid
+    .video
     {
-        height: 146px;
-        box-shadow: 4px 4px #EC3332;
+        margin-top: 80px;
+        position: relative;
+        width: 100%;
+        height: 0;
+        padding-bottom: 100%;
+        cursor: pointer;
     }
 
-    p + .vid
+    .video_media
     {
-        margin-top: 100px;
+        width: 100%;
+        border: none;
+        position: absolute;
+        top: 0;
+        left: 0;
+        box-shadow: 3px 3px #EC3332;
     }
 
-    .vid + h1
+    .video_button
     {
-        margin-top: 85px;
+        position: absolute;
+        top: 35%;
+        left: 45%;
+        transform: translate(-50%,-50%);
+        background-color: transparent;
+        border: none;
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 130%;
+        letter-spacing: 0.02em;
+        color: #FFFFFF;
+        display: none;
+    }
+
+    .video_button span
+    {
+        margin-left: -5%;
+        margin-right: 10%;
+        width: 100%;
+    }
+
+    .video_button img
+    {
+        width: 50px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        margin-left: 80%;
+    }
+
+    .video--enabled
+    {
+        cursor: pointer;
+    }
+
+    .video--enabled .video_button
+    {
+        display: block;
     }
 
     .jobs
