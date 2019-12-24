@@ -133,6 +133,11 @@ time, mark, audio, video{
         color: #000000;
     }
 
+    footer nav a:hover
+    {
+        text-decoration: underline;
+    }
+
     header
     {
         position: fixed;
@@ -168,6 +173,11 @@ time, mark, audio, video{
         text-decoration: none;
         margin-left: 30px;
         color: #000000;
+    }
+
+    header nav a:hover
+    {
+        text-decoration: underline;
     }
 
     Header button
