@@ -97,6 +97,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 document.addEventListener('DOMContentLoaded', function () {
     let topp = document.getElementById('top');
+    if (!topp) return;
     let shadowRdclr = document.getElementById('RDCLR-shadow');
     let shadowHome = document.getElementById('HOME-shadow');
 
@@ -123,7 +124,7 @@ document.addEventListener('DOMContentLoaded', function () {
         requestAnimationFrame(animate);
     }
 
-    topp.addEventListener('mousemove', function(event) {
+    topp.addEventListener('mousemove' || 'touchmove', function(event) {
         let centerX = window.innerWidth / 2;
         let centerY = 800 / 2;
 
@@ -305,22 +306,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
         document.addEventListener('resize', resize);
     }
-});
-
-document.addEventListener('DOMContentLoaded', function () {
-    let button = document.getElementById('button');
-    let menu = document.getElementById('blocker');
-    let action = false;
-
-    button.addEventListener('click', function() {
-        if (action === false) {
-            if (menu) menu.classList.add('lock');
-            action = true;
-        } else {
-            if (menu) menu.classList.remove('lock');
-            action = false;
-        }
-    });
 });
 
 document.addEventListener('DOMContentLoaded', function () {

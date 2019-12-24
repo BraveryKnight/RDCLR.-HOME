@@ -670,7 +670,7 @@ time, mark, audio, video{
         margin-top: 140px;
         display: grid;
         grid-template-columns:  1fr 1fr;
-        grid-column-gap: 170px;
+        grid-column-gap: 40%;
         grid-row-gap: 40px;
         align-items: center;
         justify-items: center;
@@ -680,11 +680,12 @@ time, mark, audio, video{
     {
         margin-bottom: 10px;
         box-shadow: 5px 5px #EC3332;
-        width: 140%;
+        width: 200%;
     }
 
     .container p
     {
+        width: 200%;
         margin-top: 0px;
     }
 
@@ -692,8 +693,13 @@ time, mark, audio, video{
     {
         display: flex;
         justify-content: space-between;
-        margin: -50px 15% 100px 55%;
+        margin: -50px 10% 100px 60%;
 
+    }
+
+    .button
+    {
+        cursor: pointer;
     }
 
     a span
@@ -707,6 +713,12 @@ time, mark, audio, video{
         color: #000000;
         margin-right: 60px;
         text-transform: uppercase;
+    }
+
+    a span:hover
+    {
+        color: #EC3332;
+        transition: 0.3s ease;
     }
 
     a img
@@ -771,7 +783,8 @@ time, mark, audio, video{
     .video
     {
         position: relative;
-        width: 100%;
+        width: 80%;
+        margin-left: 10%;
         height: 0;
         cursor: pointer;
     }
@@ -779,6 +792,11 @@ time, mark, audio, video{
     .video + h1
     {
         margin-top: 56%;
+    }
+
+    .after
+    {
+        margin-top: 80%;
     }
 
     .video_media
@@ -812,11 +830,11 @@ time, mark, audio, video{
 
     .video_button img
     {
-        width: 40px;
+        width: 60px;
         position: absolute;
-        top: 0;
+        top: -10px;
         left: 0;
-        margin-left: 100%;
+        margin-left: 110%;
     }
 
     .video--enabled
@@ -1143,6 +1161,11 @@ time, mark, audio, video{
     {
         margin-left: 82px;
         margin-bottom: 80px;
+    }
+
+    .o_nas
+    {
+        display: none;
     }
 
 }
@@ -1908,13 +1931,13 @@ time, mark, audio, video{
     }
 
     select, option{
-        width: 130px;
+        width: 140px;
         height: 56px;
         border: 2px solid #000000;
         font-family: 'Montserrat', sans-serif;
         font-style: normal;
         font-weight: normal;
-        font-size: 14px;
+        font-size: 12px;
         line-height: 130%;
         letter-spacing: 0.02em;
         color: #000000;
@@ -1924,12 +1947,12 @@ time, mark, audio, video{
     }
 
     select{
-        background: url("img/selector.svg") no-repeat 90% 50%;
+        background: url("img/selector_mobile.svg") no-repeat 90% 50%;
     }
 
     select:focus {
         outline: none;
-        background: url("img/selector.svg") no-repeat 90% 50%;
+        background: url("img/selector_mobile.svg") no-repeat 90% 50%;
     }
 
     .container
@@ -1957,6 +1980,11 @@ time, mark, audio, video{
         margin: 20px 5% 50px 5%;
     }
 
+    .button
+    {
+        cursor: pointer;
+    }
+
     .slide_arrows img
     {
         width: 14px;
@@ -1964,16 +1992,17 @@ time, mark, audio, video{
 
     .video
     {
-        margin-top: 80px;
+        margin-top: 60px;
         position: relative;
-        width: 100%;
+        width: 90%;
+        margin-left: 5%;
         height: 0;
         cursor: pointer;
     }
 
-    .video + h1
+    .after
     {
-        margin-top: 80%;
+        margin-top: 70%;
     }
 
     .video_media
