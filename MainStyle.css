@@ -812,7 +812,7 @@ time, mark, audio, video{
 
     .video_media
     {
-        width: 100%;
+        width: 101%;
         border: none;
         position: absolute;
         top: 0;
