@@ -320,7 +320,7 @@ time, mark, audio, video{
     .agree
     {
         position: absolute;
-        margin-top: 70px;
+        margin-top: 76px;
         margin-left: 50px;
         width: 50%;
     }
@@ -793,8 +793,8 @@ time, mark, audio, video{
     .video
     {
         position: relative;
-        width: 80%;
-        margin-left: 10%;
+        width: 90%;
+        margin-left: 5%;
         height: 0;
         cursor: pointer;
     }
@@ -982,6 +982,7 @@ time, mark, audio, video{
     .shedule h1
     {
         width: 80%;
+        padding-top: 0;
         margin-top: 160px;
     }
 
