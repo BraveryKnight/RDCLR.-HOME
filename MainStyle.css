@@ -844,7 +844,7 @@ time, mark, audio, video{
 
     .video--enabled .video_button
     {
-        display: block;
+        display: flex;
     }
 
     .video--enabled .video_button:hover
