@@ -779,9 +779,10 @@ time, mark, audio, video{
     .time
     {
         display: flex;
+        margin-left: 25%;
         flex-wrap: wrap;
         justify-content: left;
-        margin-top: 20px;
+        margin-top: -60px;
     }
 
     .time_item
@@ -1924,14 +1925,24 @@ time, mark, audio, video{
         margin-top: 24px;
     }
 
-    h3 + .time
+    .time
     {
-        margin-top: 20px;
+        display: flex;
+        margin-left: 5%;
+        flex-wrap: wrap;
+        justify-content: left;
+        margin-top: 8px;
     }
 
-    .time + h2
+    .time_item
     {
-        margin-top: 60px;
+        margin-right: 4%;
+        margin-top: 12px;
+    }
+
+    .after_time
+    {
+        margin-top: 40px;
     }
 
     .sort_all

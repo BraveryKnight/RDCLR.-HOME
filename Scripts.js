@@ -199,19 +199,8 @@ function createForm(form, mess) {
     form.addEventListener('submit', function (event) {
         event.preventDefault();
 
-        if (!validate()) {
-            overlay.style.display = 'block';
-            textmess.innerHTML = '<button></button><b>Ошибка!</b><p>Проверьте корректность<br> вводимых данных</p>';
-            textmess.style.color = "#EC3332";
-            document.body.style.overflow = "hidden";
 
-            let button = textmess.querySelector('button');
-            button.addEventListener('click', function () {
-                overlay.style.display = 'none';
-                document.body.style.overflow = "scroll";
-            })
-        }
-        else
+        if (validate())
         {
             overlay.style.display = 'block';
             textmess.innerHTML = '<button></button><b>Поздравляем!</b><p>Вы записались<br> на RDCLR.HOME</p>';
@@ -348,11 +337,11 @@ document.addEventListener('DOMContentLoaded', function () {
         iframe.setAttribute('width', '100%');
         if (window.innerWidth > '800')
         {
-            iframe.setAttribute('height', '450px');
+            iframe.setAttribute('height', '550px');
         }
         else
         {
-            iframe.setAttribute('height', '240px');
+            iframe.setAttribute('height', '190px');
         }
 
         iframe.classList.add('video__media');
