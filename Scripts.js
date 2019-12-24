@@ -348,11 +348,11 @@ document.addEventListener('DOMContentLoaded', function () {
         iframe.setAttribute('width', '100%');
         if (window.innerWidth > '800')
         {
-            iframe.setAttribute('height', '350px');
+            iframe.setAttribute('height', '450px');
         }
         else
         {
-            iframe.setAttribute('height', '190px');
+            iframe.setAttribute('height', '240px');
         }
 
         iframe.classList.add('video__media');
