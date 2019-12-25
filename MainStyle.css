@@ -1275,6 +1275,7 @@ time, mark, audio, video{
         border: none;
         background-image: url("img/hum.svg");
         background-repeat: round;
+
     }
 
     button.active
@@ -1288,6 +1289,7 @@ time, mark, audio, video{
         border: none;
         background-image: url("img/close.svg");
         background-repeat: round;
+        margin-bottom: -20px;
     }
 
     header nav.active{
