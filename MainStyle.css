@@ -1266,6 +1266,7 @@ time, mark, audio, video{
     header a img
     {
         width: 53px;
+        margin-top: -10px;
     }
 
     header img
