@@ -1263,9 +1263,10 @@ time, mark, audio, video{
         display: none;
     }
 
-    header img
+    header a img
     {
         width: 53px;
+        margin-top: -20px;
     }
 
     header button {
@@ -1275,7 +1276,6 @@ time, mark, audio, video{
         border: none;
         background-image: url("img/hum.svg");
         background-repeat: round;
-        margin-bottom: -20px;
     }
 
     button.active
