@@ -1266,7 +1266,11 @@ time, mark, audio, video{
     header a img
     {
         width: 53px;
-        margin-top: -20px;
+    }
+
+    header img
+    {
+        width: 53px;
     }
 
     header button {
