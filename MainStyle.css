@@ -1270,6 +1270,7 @@ time, mark, audio, video{
 
     header button {
         width: 27px;
+        height: 27px;
         background-color: transparent;
         border: none;
         background-image: url("img/hum.svg");
@@ -1472,6 +1473,10 @@ time, mark, audio, video{
         color: #FFFFFF;
         box-shadow: 5px 5px #000000;
         border: none;
+    }
+
+    .error{
+        border: 2px solid #EC3332;
     }
 
     .overlay
